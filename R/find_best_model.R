@@ -61,10 +61,10 @@ best_lm_model <- function(data, dep_var="", keep_vars=list(), ignore_vars=list()
                     base_model <- lm(as.formula(paste(dep_var, "~ .")), data = data_w)
                     model_base <<- base_model
                     if(return=="all"| return=="base"){
-                              formula <- paste(dep_var, " ~ ", names(data)[2])
-                              if(length(data)>2){
-                                        for(x in 3:length(data)){
-                                                  formula <- paste(formula, " + ", names(data)[x], sep="")
+                              formula <- paste(dep_var, " ~ ", names(data_w)[2])
+                              if(length(data_w)>2){
+                                        for(x in 3:length(data_w)){
+                                                  formula <- paste(formula, " + ", names(data_w)[x], sep="")
                                         }
                               }
                               wid <- options()$width+2
