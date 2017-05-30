@@ -1,0 +1,13 @@
+Package: best.model
+Title: Best Statistical Model
+Version: 0.0.0.9
+Authors@R: person("Russ", "Gasdia", email = "russell.gasdia@yale.edu", role = c("aut", "cre"))
+Description: This package aids in model selection for multi-variate regression
+Depends: R (>= 3.4.0)
+License: GPLv3
+Encoding: UTF-8
+LazyData: true
+Imports: statsr, dplyr, ggplot2, GGally
+RoxygenNote: 6.0.1
+Author: Russ Gasdia [aut, cre]
+Maintainer: Russ Gasdia <russell.gasdia@yale.edu>

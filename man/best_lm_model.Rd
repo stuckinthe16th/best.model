@@ -27,7 +27,6 @@ best_lm_model(data, dep_var = "", keep_vars = list(),
 \description{
 This function helps you select the best linear model given your dataset.  Allows you to define a denpendent variable, any variables you wish to have in your final model and which type of optomized liner model you would like returned.  Provides both Adjusted \eqn{R^{2}}{R^2} and p-value optimized models.
 }
-\examples(verbose=TRUE){
-#best_lm_model(swiss, dep_var="Fertility", keep_var="Catholic", return="p")
-print("Hello world!")
+\examples{
+best_lm_model(swiss, dep_var="Fertility", keep_var="Catholic", return="p")
 }
